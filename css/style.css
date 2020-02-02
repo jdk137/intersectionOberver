@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  position: relative;
+  -webkit-text-size-adjust: none;
+}
+
+div,a,img {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select:none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0; 
+  font-family: 'Source Han Sans CN','Helvetica','PingFang SC','微软雅黑', 'Microsoft YaHei','思源宋', 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: #F7F7EE;
+  font-size: 16px;
+  font-weight: 300;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+#scaleContainer {
+  width: 750px;
+  margin: auto;
+  background-color: #EDEFF3;
+  transform-origin: 0 0;
+  display: none;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#scaleContainer > *, #charts > *, #news > *, #prevent > * {
+  width: 100%;
+}
+
+.head {
+  width: 750px;
+  height: 330px;
+  background: url(../img/head.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#prevent .prevent {
+  margin-bottom: 86px;
+  margin-top: 86px;
+  width: 92%;
+  margin-left: 4%;
+}
+#moveNav.nav {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  width: 750px;
+  height: 70px;
+  text-align: center;
+  z-index: 10;
+  cursor: pointer;
+  transform-origin: top left;
+  background: #fff;
+  display: none;
+}
+
+.navTabs {
+  width: 750px;
+  height: 70px;
+  background: #fff;
+}
+.navTab {
+    margin: 0 40px;
+    display: inline-block;
+    width: 165px;
+    border-bottom: 3px solid #fff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navTab a {
+  text-decoration: none;
+  color: #909091;
+}
+.navTab.active {
+  border-bottom: 5px solid #343A70;
+}
+.navTab.active a{
+  color: #3E4077;
+}
